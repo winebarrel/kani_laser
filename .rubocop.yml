@@ -1,0 +1,29 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - lib/kani_laser/schema.rb
+    - vendor/bundle/**/*
+Layout/LineLength:
+  Max: 120
+Style/Documentation:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Lint/AssignmentInCondition:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
