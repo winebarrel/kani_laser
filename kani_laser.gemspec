@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['winebarrel']
   spec.email         = ['sugawara@winebarrel.jp']
 
-  spec.summary       = 'SendGrid v3 Mail Send API Ruby Client.'
+  spec.summary       = 'SendGrid v3 Mail Send API Ruby Client that validates API request body using JSON Schema.'
   spec.description   = spec.summary
   spec.homepage      = 'https://github.com/winebarrel/kani_laser'
   spec.license       = 'MIT'
