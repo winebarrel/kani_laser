@@ -1,6 +1,6 @@
 # KaniLaser
 
-[SendGrid v3 Mail Send API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html) Ruby Client.
+[SendGrid v3 Mail Send API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html) Ruby Client that validates API request body using [JSON Schema](https://github.com/winebarrel/kani_laser/blob/master/lib/kani_laser/schema.rb).
 
 [![Gem Version](https://badge.fury.io/rb/kani_laser.svg)](http://badge.fury.io/rb/kani_laser)
 [![Build Status](https://travis-ci.org/winebarrel/kani_laser.svg?branch=master)](https://travis-ci.org/winebarrel/kani_laser)
@@ -51,3 +51,9 @@ client.send_mail(
   ]
 )
 ```
+
+## Related Links
+
+* https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html
+* https://sendgrid.api-docs.io/
+* https://github.com/sendgrid/sendgrid-oai/
