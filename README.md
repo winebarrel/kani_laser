@@ -52,6 +52,12 @@ client.send_mail(
 )
 ```
 
+## Update schema
+
+```rubu
+rake schema:update
+```
+
 ## Related Links
 
 * https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html
