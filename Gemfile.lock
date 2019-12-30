@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kani_laser (0.1.0)
+    kani_laser (0.1.1)
       faraday (~> 0.17.1)
       faraday_middleware
       json-schema
