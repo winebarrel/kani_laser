@@ -87,7 +87,6 @@ end
 ```
 
 ```
-# Error
 JSON::Schema::ValidationError: The property '#/content/0' did not contain a required property of 'type'
 ```
 
