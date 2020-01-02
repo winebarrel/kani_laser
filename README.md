@@ -62,6 +62,8 @@ client = KaniLaser::Client.new(options) do |faraday|
     end
   end
 end
+
+client.send_mail(...)
 ```
 
 ## Update schema
