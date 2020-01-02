@@ -55,7 +55,8 @@ module KaniLaser
           {"type"=>"integer",
            "description"=>
             "A unix timestamp allowing you to specify when you want your email to be delivered. Scheduling more than 72 hours in advance is forbidden."}},
-       "required"=>["to"]}},
+       "required"=>["to"]},
+     "minItems"=>1},
    "from"=>{"$ref"=>"#/definitions/email_object"},
    "reply_to"=>{"$ref"=>"#/definitions/email_object"},
    "subject"=>

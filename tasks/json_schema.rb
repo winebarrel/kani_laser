@@ -22,6 +22,10 @@ module JSONSchema
       schema['required'].delete('subject')
       schema['required'].delete('content')
 
+      # TODO: Fix upstream
+      # https://github.com/sendgrid/sendgrid-oai
+      schema['properties'].fetch('personalizations')['minItems'] ||= 1
+
       schema
     end
   end
