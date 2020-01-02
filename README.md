@@ -52,9 +52,21 @@ client.send_mail(
 )
 ```
 
+### For testing
+
+```ruby
+client = KaniLaser::Client.new(options) do |faraday|
+  faraday.adapter :test, Faraday::Adapter::Test::Stubs.new do |stub|
+    stub.post('/v3/mail/send') do |_env|
+      [202, {}, '']
+    end
+  end
+end
+```
+
 ## Update schema
 
-```rubu
+```sh
 rake schema:update
 ```
 
