@@ -66,6 +66,35 @@ end
 client.send_mail(...)
 ```
 
+### Use `On-Behalf-Of`
+
+```ruby
+KaniLaser::Client.new(options) do |faraday|
+  faraday.headers['On-Behalf-Of'] = '<subuser_username>'
+end
+```
+
+## Request parameter validation error example
+
+```ruby
+{
+  personalizations: [{
+    to: [{ email: 'sugawara@winebarrel.jp' }],
+  }],
+  subject: 'Hello, World!',
+  from: {
+    email: 'from_address@example.com',
+  },
+  content: [
+    {
+      value: 'Hello, World!',
+    },
+  ]
+}
+```
+
+> JSON::Schema::ValidationError: The property '#/content/0' did not contain a required property of 'type'
+
 ## Update schema
 
 ```sh
