@@ -77,23 +77,17 @@ end
 ## Request parameter validation error example
 
 ```ruby
+# Parameter
 {
-  personalizations: [{
-    to: [{ email: 'sugawara@winebarrel.jp' }],
-  }],
+  personalizations: [{ to: [{ email: 'sugawara@winebarrel.jp' }] }],
   subject: 'Hello, World!',
-  from: {
-    email: 'from_address@example.com',
-  },
-  content: [
-    {
-      value: 'Hello, World!',
-    },
-  ]
+  from: { email: 'from_address@example.com' },
+  content: [{ value: 'Hello, World!' }],
 }
 ```
 
 ```
+# Error
 JSON::Schema::ValidationError: The property '#/content/0' did not contain a required property of 'type'
 ```
 
