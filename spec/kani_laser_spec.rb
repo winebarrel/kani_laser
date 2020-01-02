@@ -8,7 +8,11 @@ RSpec.describe KaniLaser::Client do
   let(:client) do
     described_class.new(options) do |faraday|
       faraday.adapter :test, Faraday::Adapter::Test::Stubs.new do |stub|
-        stub.post('/v3/mail/send') { [202, {}, ''] }
+        stub.post('/v3/mail/send') do |env|
+          body = JSON.parse(env.body)
+          expect(body).to eq expected_req_body
+          [202, {}, '']
+        end
       end
     end
   end
