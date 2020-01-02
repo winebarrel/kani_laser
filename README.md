@@ -96,7 +96,7 @@ JSON::Schema::ValidationError: The property '#/content/0' did not contain a requ
 rake schema:update
 ```
 
-## Related Links
+## Related links
 
 * https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html
 * https://sendgrid.api-docs.io/
