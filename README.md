@@ -77,7 +77,7 @@ end
 ## Request parameter validation error example
 
 ```ruby
-# Parameter
+# Invalid Parameter
 {
   personalizations: [{ to: [{ email: 'sugawara@winebarrel.jp' }] }],
   subject: 'Hello, World!',
